@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "WCAG Compliance Extension",
+  "version": "2.0",
+  "description": "An extension to enforce WCAG compliance on websites.",
+  "permissions": ["tabs", "activeTab", "storage", "scripting"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": ["<all_urls>"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["jquery-3.6.0.js", "style.js"]
+    }
+  ],
+  "action" : {
+    "default_popup" : "popup.html",
+    "default_title" : "WCAG Compliance Extension"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
+}

@@ -1,0 +1,32 @@
+/* Styles for the chart */
+#chartContainer {
+    width: 400px;
+    height: 300px;
+    margin: auto;
+}
+
+/* Styles for the table */
+.results-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-row th {
+    background-color: #1a1a2e; 
+    color: #fff; 
+    border: 1px solid #dddddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.results-table td,
+.results-table th {
+    border: 1px solid #dddddd;
+    padding: 8px;
+}
+
+.results-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
